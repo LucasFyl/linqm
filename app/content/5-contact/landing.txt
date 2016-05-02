@@ -1,0 +1,19 @@
+title: Contact
+
+----
+
+landingTitle: Let Linqm start turning your recruiting stress into success.
+
+----
+
+subTitle: Contact Us
+
+----
+
+btnText: Get in touch
+
+----
+
+btnLink:
+
+

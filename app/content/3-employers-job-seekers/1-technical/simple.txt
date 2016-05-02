@@ -1,0 +1,16 @@
+Title: Technical
+
+----
+
+Text: 
+
+Web Designers (UX, UI, Visual, Graphic), Web Developers, Software Engineers (.NET / LAMP stack, C#, Java, PHP, Ruby), Front End Web Developers (JavaScript, Html, CSS, AngularJS, Bootstrap), QA testers (Automated, Manual - Web, Mobile-Selenium), Systems Engineers,
+Network Engineers, Database, Product Management (Marketing, Technical), Program Management, Business Analyst, Data Analyst.
+
+----
+
+Btntext: 
+
+----
+
+Btnlink: 
