@@ -15,4 +15,4 @@ fields:
     type:  text
   btnLink:
     label: Button link
-    type:  url
+    type:  text

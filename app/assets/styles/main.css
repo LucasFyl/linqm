@@ -761,6 +761,8 @@ th {
  * Base styles ~ Type
  */
 body {
+  font-size: 1.3rem;
+  font-family: "FuturaStdBook", sans-serif;
   color: #aeaea8;
 }
 
@@ -867,6 +869,19 @@ small {
   line-height: inherit;
 }
 
+.pressable:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .btn {
   display: inline-block;
   position: relative;
@@ -889,7 +904,300 @@ small {
   color: white;
   border-color: white;
 }
-.btn.white {
-  color: black;
-  border-color: black;
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .menu-trigger {
+  height: 1.3rem;
+  width: 1.9rem;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  left: 8.1rem;
+  top: 6.3rem;
+}
+header .menu-trigger.black {
+  background: url(../images/hamburger-black.svg) no-repeat center center;
+  background-size: 1.9rem 1.3rem;
+}
+header .menu-trigger.white {
+  background: url(../images/hamburger.svg) no-repeat center center;
+  background-size: 1.9rem 1.3rem;
+}
+
+.contact-link {
+  display: inline-block;
+  font-family: "FuturaStdMedium", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: fixed;
+  z-index: 999;
+  right: 8.1rem;
+  bottom: 6.3rem;
+}
+
+#menu {
+  position: fixed;
+  z-index: 9998;
+  height: 100%;
+  width: 100%;
+  background: rgba(252, 84, 87, 0.78);
+}
+#menu.hide {
+  display: none;
+}
+#menu nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#menu nav ul {
+  padding: 0;
+  max-width: 39rem;
+  margin: 0 auto;
+}
+#menu nav li {
+  list-style: none;
+}
+#menu nav li a {
+  font-family: "FuturaStdBook", sans-serif;
+  font-size: 3.5rem;
+  line-height: 6.5rem;
+  color: white;
+  text-decoration: none;
+}
+#menu .social {
+  position: absolute;
+  width: 100%;
+  bottom: 6.5rem;
+}
+#menu .social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#menu .social ul li {
+  height: 6rem;
+  width: 6rem;
+  display: block;
+  float: left;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 4.5rem;
+}
+#menu .social ul li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-indent: -9999px;
+}
+#menu .social ul li.linkedin a {
+  background: url("../images/asset-icon-linkedin.png") no-repeat center 45%;
+  background-size: 2.1rem;
+}
+#menu .social ul li.facebook a {
+  background: url("../images/asset-icon-facebook.png") no-repeat center center;
+  background-size: 1rem 2.1rem;
+}
+#menu .social ul li.twitter {
+  margin-right: 0;
+}
+#menu .social ul li.twitter a {
+  background: url("../images/asset-icon-twitter.png") no-repeat center center;
+  background-size: 2.1rem 1.75rem;
+}
+
+main.landing .logo {
+  text-indent: -9999px;
+  display: block;
+  height: 2rem;
+  width: 10.1rem;
+  background: url(../images/logo.png) no-repeat center center;
+  background-size: 10.1rem;
+  margin: 0 auto;
+  position: relative;
+  top: 6rem;
+  z-index: 9999;
+}
+main.landing .text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+main.landing .text h2 {
+  font-family: "GothamBold", sans-serif;
+  color: #fc5457;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+main.landing .text h1 {
+  font-family: "FuturaStdLight", garamond, serif;
+  color: white;
+  font-size: 6.5rem;
+  line-height: 7.5rem;
+  text-transform: none;
+  max-width: 75%;
+  margin: 0 auto;
+}
+main.landing .text .btn {
+  margin: 6rem auto;
+}
+
+main.default {
+  display: flex;
+}
+main.default .half {
+  width: 50%;
+}
+main.default .left .scroller {
+  position: relative;
+  z-index: 9;
+  overflow: auto;
+  max-height: 100vh;
+}
+@media screen and (min-width: 480px) {
+  main.default .left .scroller {
+    padding-left: 15.5rem;
+    padding-top: 38.5rem;
+    padding-right: 15.5rem;
+  }
+}
+main.default .left .scroller h1 {
+  margin-bottom: 7rem;
+}
+main.default .left .scroller p {
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+main.default .left .scroller .btn {
+  margin: 6rem auto;
+}
+main.default .right {
+  position: relative;
+  overflow: hidden;
+}
+main.default .right img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: none;
+  height: 100%;
+  min-width: 100%;
+}
+main.default .super-title {
+  position: absolute;
+  color: #f8f8f8;
+  font-size: 36.5rem;
+  line-height: 36.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-family: "GothamBold", sans-serif;
+  position: fixed;
+  top: 50%;
+  margin-top: -18.25rem;
+  left: 0;
+  z-index: 1;
+  opacity: .8;
+}
+
+main.gallery .left {
+  position: relative;
+  overflow: hidden;
+}
+main.gallery .left > .btn {
+  position: absolute;
+  bottom: 6.5rem;
+  left: 2rem;
+  z-index: 99;
+}
+@media screen and (min-width: 480px) {
+  main.gallery .left > .btn {
+    left: 15.5rem;
+  }
+}
+main.gallery .left .text {
+  width: 44rem;
+  margin: 0 auto;
+  height: calc(100vh - 14rem);
+}
+main.gallery .left .text h1, main.gallery .left .text h2 {
+  margin-bottom: 5.5rem;
+}
+main.gallery .left .gallery-content {
+  width: 44rem;
+  height: calc(100vh - 14rem);
+  background: white;
+  position: absolute;
+  left: 50%;
+  margin-left: -22rem;
+  top: 0;
+  z-index: 9;
+}
+main.gallery .right {
+  height: 100vh;
+  background: #fc5457;
+}
+main.gallery .right .gallery-nav {
+  height: 48rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.gallery .right .gallery-nav ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+}
+main.gallery .right .gallery-nav li {
+  padding-left: 8rem;
+  margin-bottom: 3rem;
+  font-family: "FuturaStdMedium", sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  opacity: .5;
+  letter-spacing: .1rem;
+}
+main.gallery .right .gallery-nav li:first-child {
+  opacity: 1;
+}
+main.gallery .right .gallery-nav .arrow {
+  display: block;
+  height: 1.3rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 9;
+  left: 8rem;
+}
+main.gallery .right .gallery-nav .arrow.top {
+  top: 0;
+  background: url("../images/asset-caret-up.png") no-repeat center center;
+  background-size: 2rem 1.3rem;
+}
+main.gallery .right .gallery-nav .arrow.bottom {
+  bottom: 0;
+  background: url("../images/asset-caret-down.png") no-repeat center center;
+  background-size: 2rem 1.3rem;
 }

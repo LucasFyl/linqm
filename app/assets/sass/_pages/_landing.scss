@@ -1,0 +1,42 @@
+main.landing {
+	
+	.logo {
+		text-indent: -9999px;
+		display: block;
+		@include size(10.1rem 2rem);
+		background: url(../images/logo.png) no-repeat center center;
+		background-size: 10.1rem;
+		margin: 0 auto;
+
+		position: relative;
+		top: 6rem;
+		z-index: 9999;
+	}
+
+	.text {
+		@include center(vertical);
+		text-align: center;
+
+		h2 {
+			font-family: $contrast;
+			color: $red;
+			font-size: 1.75rem;
+			text-transform: uppercase;
+			letter-spacing: .2rem;
+		}
+		
+		h1 {
+			font-family: $light;
+			color: white;
+			font-size: 6.5rem;
+			line-height: 7.5rem;
+			text-transform: none;
+			max-width: 75%;
+			margin: 0 auto;
+		}
+
+		.btn {
+			margin: 6rem auto;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+header {
+	.menu-trigger {
+		@include size(1.9rem 1.3rem);
+		cursor: pointer;
+
+		position: fixed;
+		z-index: 9999;
+		left: 8.1rem;
+		top: 6.3rem;
+
+		&.black {
+			background:url(../images/hamburger-black.svg) no-repeat center center;
+			background-size: 1.9rem 1.3rem;
+
+		}
+		&.white {
+			background:url(../images/hamburger.svg) no-repeat center center;
+			background-size: 1.9rem 1.3rem;
+		}
+	}
+}
+
+
+.contact-link {
+	display: inline-block;
+	font-family: $base-font;
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+
+	position: fixed;
+	z-index: 999;
+	right: 8.1rem;
+	bottom: 6.3rem;
+}
+
+
+#menu {
+	position: fixed;
+	z-index: 9998;
+	@include size(100%);
+	background: rgba(252, 84, 87, 0.78);
+
+	&.hide {display: none;}
+
+	nav {
+		text-align: center;
+		@include center(vertical);
+
+		ul {
+			padding: 0;
+			max-width: 39rem;
+			margin: 0 auto;
+		}
+
+		li {
+			list-style: none;
+
+			a {
+				font-family: $book;
+				font-size: 3.5rem;
+				line-height: 6.5rem;
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.social {
+		position: absolute;
+		width: 100%;
+		bottom: 6.5rem;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			@include center(horizontal);
+
+			li {
+				@include size(6rem);
+				display: block;
+				float: left;
+				border: 1px solid white;
+				border-radius: 100%;
+				margin-right: 4.5rem;
+
+				a {
+					display: block;
+					@include size(100%);
+					text-indent: -9999px;
+				}
+				&.linkedin {
+					a {
+						background: url('../images/asset-icon-linkedin.png') no-repeat center 45%;	
+						background-size: 2.1rem;
+					}
+				}
+				&.facebook {
+					a {
+						background: url('../images/asset-icon-facebook.png') no-repeat center center;	
+						background-size: 1rem 2.1rem;
+					}
+				}
+				&.twitter {
+					margin-right: 0;
+					a {
+						background: url('../images/asset-icon-twitter.png') no-repeat center center;	
+						background-size: 2.1rem 1.75rem;
+					}
+				}
+			}
+		}
+	}
+}

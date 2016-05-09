@@ -37,4 +37,5 @@ $base-font: 'FuturaStdMedium', sans-serif;
 $contrast: 'GothamBold', sans-serif;
 $book: 'FuturaStdBook', sans-serif;
 $heavy: 'FuturaStdHeavy', sans-serif;
-$title-font: 'FuturaStdLight', garamond, serif;
+$light: 'FuturaStdLight', garamond, serif;
+$title-font: $light;

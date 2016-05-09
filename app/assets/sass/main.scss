@@ -18,9 +18,11 @@
  @import "_base/grid";
  @import "_base/font-face";
  @import "_base/type";
+ @import "_base/helpers";
 
  @import "_modules/general";
  @import "_modules/header-footer";
 
- @import "_pages/home";
- @import "_pages/about";
+ @import "_pages/landing";
+ @import "_pages/default";
+ @import "_pages/gallery";

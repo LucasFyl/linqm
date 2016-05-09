@@ -6,15 +6,17 @@
     <div class="half left">
     	<div class="scroller">
     		<h1><?php echo $page->title()->html() ?></h1>
-    		<p><?php echo $page->text()->kirbyText() ?></p>
-    		<a href="<?php echo $page->btnLink() ?>" class="btn red"><?php echo $page->btnText() ?></a>
+    		<?php echo $page->text()->kirbytext() ?>
+    		<a href="<?php echo $site->url() ?>/<?php echo $page->btnLink()->html() ?>" class="btn red"><?php echo $page->btnText() ?></a>
     	</div>
     </div>
 
+    <p class="super-title"><?php echo $page->title()->html() ?></p>
+
     <div class="half right">
-    	<?php if ($page->hasImages()) : ?>
-    		<img src="<?php echo $page->images->first() ?>" alt="<?php echo $page->title()->html() ?>" />
-    	<?php endif; ?>
+    	<?php if($image = $page->image()): ?>
+        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        <?php endif ?>
     </div>
 
   </main>

@@ -1,6 +1,11 @@
 
 .main {
   
+  @include size(100vw 100vh);
+  position: relative;
+  background-size:cover;
+  overflow: hidden;
+
 }
 
 .btn {
@@ -29,9 +34,13 @@
     border-color: white;
   }
   
-  &.white {
-    color: black;
-    border-color: black;
-  }
 
+}
+
+
+.vertical-center {
+  @include center(vertical);
+}
+.horizontal-center {
+  @include center(horizontal);
 }

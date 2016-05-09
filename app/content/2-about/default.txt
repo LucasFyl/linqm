@@ -1,15 +1,20 @@
-title: About
+Title: About
 
 ----
 
-text: Providing a full range of staffing and recruiting services from start-up to Fortune 500companies, we utilize a new age recruiting methodology that has proven success. LINQM, Inc. delivers highly selective matching between our clientele and top qualified contract, contract-to-hire, and permanent employees. LINQM, inc. places importance on learning the culture, benefits, and structure of each company. As positions cross our desks, we implement our new age methodology to find bothactive and passive job seekers that fit each component required of the position and company culture alike.  Amongst many accomplishments, Linqm has hired over 250 professionals for the #1 fastestgrowing private company from 2013 – Present, helping grow the company from 28 to now over600 employees. This client’s revenue has grown from ~100MM (2013) to now over 1B takingmultiple financial and SAAS products across the entire state of CA and actively launching intoother states. Linqm, Inc. hired across all lines of business with a massively high retentionrate and very low turnovers on permanent hire positions filled.Working with over 60 clients, we are able to recruit for companies that have qualities such as15 quarters of continuous growth, full benefit packages, catered lunches, hourly, salary, andbonus opportunities. We work closely with our Clients learning important factors beyondcompensation, including culture and benefits. Many have made the list for Best Places toWork and Fastest Growing Private Companies, of which several have finished in the top 10.This allows us to strongly believe in the incredible opportunity we are presenting both active and passive job seekers. PACE initiatives: Linqm has proven to be a national leader in hiring for PACE financing companies on all facets of the industry. Linqm, Inc. is one of the fastest growing private companies in San Diego and already showing an ~400% revenue increase from 2013 to 2015 YOYOY. 
+Text: 
+
+Providing a full range of staffing and recruiting services from start-up to Fortune 500 companies, we utilize a new age recruiting methodology that has proven success. LINQM, Inc. delivers highly selective matching between our clientele and top qualified contract, contract-to-hire, and permanent employees. LINQM, inc. places importance on learning the culture, benefits, and structure of each company. As positions cross our desks, we implement our new age methodology to find bothactive and passive job seekers that fit each component required of the position and company culture alike. 
+ 
+ 
+Amongst many accomplishments, Linqm has hired over 250 professionals for the #1 fastest growing private company from 2013 – Present, helping grow the company from 28 to now over 600 employees. This client’s revenue has grown from ~100MM (2013) to now over 1B taking multiple financial and SAAS products across the entire state of CA and actively launching into other states. Linqm, Inc. hired across all lines of business with a massively high retention rate and very low turnovers on permanent hire positions filled.
+
+Working with over 60 clients, we are able to recruit for companies that have qualities such as 15 quarters of continuous growth, full benefit packages, catered lunches, hourly, salary, and bonus opportunities. We work closely with our Clients learning important factors beyond compensation, including culture and benefits. Many have made the list for Best Places to Work and Fastest Growing Private Companies, of which several have finished in the top 10. This allows us to strongly believe in the incredible opportunity we are presenting both active and passive job seekers. PACE initiatives: Linqm has proven to be a national leader in hiring for PACE financing companies on all facets of the industry. Linqm, Inc. is one of the fastest growing private companies in San Diego and already showing an ~400% revenue increase from 2013 to 2015 YOYOY.
 
 ----
 
-btnText: Employers & Job Seekers
+Btntext: Employers & Job Seekers
 
 ----
 
-btnLink:
-
-
+Btnlink: employers-job-seekers

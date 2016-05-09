@@ -1,19 +1,17 @@
-title: Home
+Title: Home
 
 ----
 
-landingTitle: Linqing Exceptional Companies with Top Qualified Candidates
+Landingtitle: Linqing Exceptional Companies with Top Qualified Candidates
 
 ----
 
-subTitle: recruitment-Permanent / contract / Contract-to-hire
+Subtitle: recruitment-Permanent / contract / Contract-to-hire
 
 ----
 
-btnText: Learn more about us
+Btntext: Learn more about us
 
 ----
 
-btnLink:
-
-
+Btnlink: about

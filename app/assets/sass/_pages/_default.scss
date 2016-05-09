@@ -1,0 +1,62 @@
+main.default {
+	display: flex;
+	.half { width: 50%; }
+
+	.left {
+		.scroller {
+			position: relative;
+			z-index: 9;
+			overflow: auto;
+			max-height: 100vh;
+			@include media($desktop) {
+				padding-left: 15.5rem;
+				padding-top: 38.5rem;
+				padding-right: 15.5rem;
+			}
+
+			h1 {
+				margin-bottom: 7rem;
+			}
+			p {
+				font-size: 2rem;
+				letter-spacing: 0;
+			}
+			.btn {
+				margin: 6rem auto;
+			}
+		}
+	}
+
+	.right {
+	    position: relative;
+	    overflow: hidden;
+	    
+		img {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    margin: auto;
+		    max-width: none;
+		    height: 100%;
+		    min-width: 100%;
+		}
+	}
+	
+	.super-title {
+		position: absolute;
+		color: #f8f8f8;
+		font-size: 36.5rem;
+		line-height: 36.5rem;
+		text-transform: uppercase;
+		letter-spacing: 1rem;
+		font-family: $contrast;
+
+		position: fixed;
+		top: 50%; margin-top: -18.25rem;
+		left: 0;
+		z-index: 1;
+		opacity: .8;
+	}
+}

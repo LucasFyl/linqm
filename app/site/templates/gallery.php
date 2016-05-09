@@ -1,20 +1,24 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main gallery" role="main">
+  <main class="main default gallery" role="main">
 
     <div class="half left">
 
     	<div class="text">
-    		<h1><?php echo $page->title()->html() ?></h1>
-    		<p><?php echo $page->text()->kirbyText() ?></p>
-    	</div>
+            <div class="vertical-center">
+                <h1><?php echo $page->title()->html() ?></h1>
+                <p><?php echo $page->text()->kirbyText() ?></p>
+            </div>
+        </div>
 
     	<div class="gallery-content">
     		<?php foreach($page->children()->visible() as $subpage): ?>
 			<div class="text">
-	    		<h1><?php echo $subpage->title()->html() ?></h1>
-	    		<p><?php echo $subpage->text()->kirbyText() ?></p>
+                <div class="vertical-center">
+                    <h2><?php echo $subpage->title()->html() ?></h2>
+                    <p><?php echo $subpage->text()->kirbyText() ?></p>
+                </div>
 	    	</div>
     		<?php endforeach; ?>
     	</div>
@@ -24,6 +28,8 @@
 
     <div class="half right">
 		<div class="gallery-nav">
+            <a href class="arrow top"></a>
+            <a href class="arrow bottom"></a>
 			<ul>
 				<?php foreach($page->children()->visible() as $subpage): ?>
     			<li><?php echo $subpage->title()->html() ?></li>

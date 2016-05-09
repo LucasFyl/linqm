@@ -17,13 +17,17 @@ function initPage(){
 	// detectMobile();
 	// hideLoader();
 
-	if ( $('#content.villas').length ) {
-		initSlickSliders();
+	$('.menu-trigger').click(function(){
+		$('#menu').toggleClass('hide');
+		$('.menu-trigger').removeClass('black').addClass('white');
+	})
+
+	if ( $('main.default').length ) {
+		$('.menu-trigger').addClass('black');
 	}
-	// } else if ( $('#content.work').length ) {
-	// } else if ( $('#content.about').length ) {
-	// } else if ( $('#content.contact').length ) {
-	// }
+	if ( $('main.landing').length ) {
+		$('.menu-trigger').addClass('white');
+	}
 }
 function initSlickSliders() {
 	'use strict';
@@ -47,29 +51,7 @@ function initSlickSliders() {
 		  focusOnSelect: true,
 			draggable: false
 		});
-
 	});
-	// $('.slider-for').each(function(){
-	// 	var _this = $(this);
-	// 	_this.slick({
-	// 	  slidesToShow: 1,
-	// 	  slidesToScroll: 1,
-	// 	  arrows: false,
-	// 	  fade: true,
-	// 	  asNavFor: '.slider-nav'
-	// 	});
-	// });
-	// $('.slider-nav').each(function(){
-	// 	var _this = $(this);
-	// 	_this.slick({
-	// 	  slidesToShow: 5,
-	// 	  slidesToScroll: 1,
-	// 	  asNavFor: '.slider-for',
-	// 	  dots: false,
-	// 	  centerMode: false,
-	// 	  focusOnSelect: true
-	// 	});
-	// });
 }
 function detectMobile(){
 	'use strict';
@@ -93,13 +75,8 @@ function hideLoader(){
 }
 function resize() {
 	'use strict';
-
 }
-function initSlider() {
-	'use strict';
-
-}
-function landingAnimHome() {
+function landingAnimLanding() {
 	'use strict';
 
 	// var landingTl = new TimelineMax({paused:true});
@@ -113,4 +90,9 @@ function landingAnimHome() {
 	// 		 .to('.center a', 0.5, {opacity:1,scale:1,ease:Power2.easeOut});
 
 	// setTimeout(function(){landingTl.play();}, 200);
+}
+function landingAnimDefault() {
+	'use strict';
+
+
 }
