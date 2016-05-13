@@ -1,0 +1,40 @@
+#loader-wrap {
+	position: fixed;
+	z-index: 99999;
+	top: 0;left: 0;
+	right: 0;bottom: 0;
+	overflow: hidden;
+
+	section {
+		@include size(100%);
+		position: absolute;
+		left: 0;
+		width: 0;
+		background:white;
+		z-index: 99;
+
+		&.red {
+			width: 100vw;
+			z-index: 98;
+			background:$red;
+		}
+		&.logo-wrap {
+			position: fixed;
+			left: 0; right: 0;
+			width: 100vw;
+			z-index: 999;
+			background:transparent;
+		}
+
+	}
+
+	.logo.red {
+		width: 60rem;
+		height: 11.9rem;
+		margin: 0 auto; 
+		background:url('../images/logo-red.png') no-repeat center center;
+		background-size: 60rem;
+		display: block;
+		@include center(vertical);
+	}
+}

@@ -917,6 +917,49 @@ small {
   transform: translateX(-50%);
 }
 
+#loader-wrap {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#loader-wrap section {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  width: 0;
+  background: white;
+  z-index: 99;
+}
+#loader-wrap section.red {
+  width: 100vw;
+  z-index: 98;
+  background: #fc5457;
+}
+#loader-wrap section.logo-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 999;
+  background: transparent;
+}
+#loader-wrap .logo.red {
+  width: 60rem;
+  height: 11.9rem;
+  margin: 0 auto;
+  background: url("../images/logo-red.png") no-repeat center center;
+  background-size: 60rem;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 header .menu-trigger {
   height: 1.3rem;
   width: 1.9rem;
@@ -1054,7 +1097,7 @@ main.landing .text h1 {
   font-size: 6.5rem;
   line-height: 7.5rem;
   text-transform: none;
-  max-width: 75%;
+  max-width: 85rem;
   margin: 0 auto;
 }
 main.landing .text .btn {
@@ -1121,30 +1164,30 @@ main.default .super-title {
   opacity: .8;
 }
 
-main.gallery .left {
+main#gallery .left {
   position: relative;
   overflow: hidden;
 }
-main.gallery .left > .btn {
+main#gallery .left > .btn {
   position: absolute;
   bottom: 6.5rem;
   left: 2rem;
   z-index: 99;
 }
 @media screen and (min-width: 480px) {
-  main.gallery .left > .btn {
+  main#gallery .left > .btn {
     left: 15.5rem;
   }
 }
-main.gallery .left .text {
+main#gallery .left .text {
   width: 44rem;
   margin: 0 auto;
   height: calc(100vh - 14rem);
 }
-main.gallery .left .text h1, main.gallery .left .text h2 {
+main#gallery .left .text h1, main#gallery .left .text h2 {
   margin-bottom: 5.5rem;
 }
-main.gallery .left .gallery-content {
+main#gallery .left .gallery-content {
   width: 44rem;
   height: calc(100vh - 14rem);
   background: white;
@@ -1154,36 +1197,41 @@ main.gallery .left .gallery-content {
   top: 0;
   z-index: 9;
 }
-main.gallery .right {
+main#gallery .right {
   height: 100vh;
   background: #fc5457;
 }
-main.gallery .right .gallery-nav {
+main#gallery .right .gallery-nav {
   height: 48rem;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-main.gallery .right .gallery-nav ul {
+main#gallery .right .gallery-nav ul {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   padding: 0;
   margin: 0;
 }
-main.gallery .right .gallery-nav li {
+main#gallery .right .gallery-nav li {
+  width: 100% !important;
   padding-left: 8rem;
   margin-bottom: 3rem;
+  cursor: pointer;
   font-family: "FuturaStdMedium", sans-serif;
   color: white;
   font-size: 1.8rem;
   opacity: .5;
   letter-spacing: .1rem;
 }
-main.gallery .right .gallery-nav li:first-child {
+main#gallery .right .gallery-nav li.slick-current {
   opacity: 1;
 }
-main.gallery .right .gallery-nav .arrow {
+main#gallery .right .gallery-nav li:focus, main#gallery .right .gallery-nav li:active {
+  outline: none;
+}
+main#gallery .right .gallery-nav .arrow {
   display: block;
   height: 1.3rem;
   width: 2rem;
@@ -1191,12 +1239,12 @@ main.gallery .right .gallery-nav .arrow {
   z-index: 9;
   left: 8rem;
 }
-main.gallery .right .gallery-nav .arrow.top {
+main#gallery .right .gallery-nav .arrow.top {
   top: 0;
   background: url("../images/asset-caret-up.png") no-repeat center center;
   background-size: 2rem 1.3rem;
 }
-main.gallery .right .gallery-nav .arrow.bottom {
+main#gallery .right .gallery-nav .arrow.bottom {
   bottom: 0;
   background: url("../images/asset-caret-down.png") no-repeat center center;
   background-size: 2rem 1.3rem;

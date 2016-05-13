@@ -1,5 +1,8 @@
 
       <?= js('/bower_components/jquery/dist/jquery.js') ?>
+      <?= js('/bower_components/gsap/src/minified/TweenMax.min.js') ?>
+      <?= js('//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js') ?>
+
       <?= js('assets/scripts/main.js') ?>
 
 

@@ -1,4 +1,4 @@
-main.gallery {
+main#gallery {
 	
 	.left {
 		position: relative;
@@ -51,8 +51,10 @@ main.gallery {
 				margin: 0;
 			}
 			li {
+    			width: 100% !important;
 				padding-left: 8rem;
 				margin-bottom: 3rem;
+				cursor: pointer;
 
 				font-family: $base-font;
 				color: white;
@@ -60,9 +62,14 @@ main.gallery {
 				opacity: .5;
 				letter-spacing: .1rem;
 
-				&:first-child {
+				&.slick-current {
 					opacity: 1;
 				}
+
+				&:focus, &:active {
+					outline: none;
+				}
+
 			}
 
 			.arrow {

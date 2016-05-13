@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main default gallery" role="main">
+  <main class="main default" role="main" id="gallery">
 
     <div class="half left">
 
@@ -28,8 +28,8 @@
 
     <div class="half right">
 		<div class="gallery-nav">
-            <a href class="arrow top"></a>
-            <a href class="arrow bottom"></a>
+            <!-- <a href class="arrow top"></a>
+            <a href class="arrow bottom"></a> -->
 			<ul>
 				<?php foreach($page->children()->visible() as $subpage): ?>
     			<li><?php echo $subpage->title()->html() ?></li>

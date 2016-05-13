@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main default" role="main">
+  <main class="main default" role="main" id="default">
 
     <div class="half left">
     	<div class="scroller">

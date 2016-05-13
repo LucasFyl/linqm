@@ -25,6 +25,7 @@
     "gsap": "~1.18.1",
     "scrollmagic": "~2.0.5",
     "bourbon": "~4.2.6",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "slick-carousel": "^1.6.0"
   }
 }
