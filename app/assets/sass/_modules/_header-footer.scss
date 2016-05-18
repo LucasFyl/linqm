@@ -8,14 +8,17 @@ header {
 		left: 8.1rem;
 		top: 6.3rem;
 
-		&.black {
-			background:url(../images/hamburger-black.svg) no-repeat center center;
-			background-size: 1.9rem 1.3rem;
+		outline: none;
 
-		}
-		&.white {
-			background:url(../images/hamburger.svg) no-repeat center center;
-			background-size: 1.9rem 1.3rem;
+		&.black {
+			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+				background-color: #949494;
+			}
+			&.is-active {
+				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+					background-color: white;
+				}	
+			}
 		}
 	}
 }
@@ -32,4 +35,9 @@ header {
 	z-index: 999;
 	right: 8.1rem;
 	bottom: 6.3rem;
+
+	&.menu-open {
+		z-index: 99999;
+		text-decoration: underline;
+	}
 }

@@ -1,5 +1,9 @@
 <header>
-	<div class="menu-trigger"></div>
+	<button class="menu-trigger hamburger hamburger--collapse" type="button">
+	  <span class="hamburger-box">
+	    <span class="hamburger-inner"></span>
+	  </span>
+	</button>
 	<?php snippet('menu') ?>
 </header>
 	

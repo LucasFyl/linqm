@@ -1,4 +1,4 @@
-<div id="menu" class="hide">
+<div id="menu">
 
   <nav role="navigation">
     <ul>

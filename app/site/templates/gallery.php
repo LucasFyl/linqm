@@ -1,7 +1,7 @@
 <?php snippet('head') ?>
 <?php snippet('header') ?>
 
-  <main class="main default" role="main" id="gallery">
+  <main class="main" role="main" id="gallery">
 
     <div class="half left">
 
