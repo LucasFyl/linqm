@@ -36,5 +36,10 @@
 		background-size: 60rem;
 		display: block;
 		@include center(vertical);
+
+
+		@include media($mobile) {
+			@include transform(scale(0.8));
+		}
 	}
 }

@@ -16,7 +16,8 @@ $(document).ready(function(){
 function initPage(){
 	'use strict';
 
-	// detectMobile();
+	detectMobile();
+
 	if($('body.home').length) {
 		hideFullLoader();
 	} else {
@@ -44,31 +45,59 @@ function initPage(){
 function initGallery() {
 	'use strict';
 
-	var content = $('.gallery-content');
-	var nav = $('.gallery-nav ul');
+	if ( !isMobile ) {
 
-	content.slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		fade: true,
-		dots: false,
-		autoplay: true,
-		prevArrow: '<a href="#" class="arrow top"></a>',
-		nextArrow: '<a href="#" class="arrow bottom"></a>',
-		appendArrows: $('.gallery-nav'),
-		asNavFor: nav
-	});
+		var content = $('.gallery-content');
+		var nav = $('.gallery-nav ul');
+		var indexNav = $('.index-wrap ul');
 
-	nav.slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		asNavFor: content,
-		dots: false,
-		centerMode: false,
-		focusOnSelect: true,
-		draggable: false
-	});
+		content.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			dots: false,
+			autoplay: true,
+			prevArrow: '<a href="#" class="arrow top"></a>',
+			nextArrow: '<a href="#" class="arrow bottom"></a>',
+			appendArrows: $('.gallery-nav'),
+			asNavFor: nav
+			// asNavFor: nav
+		});
+
+		nav.slick({
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			asNavFor: content,
+			dots: true,
+			centerMode: false,
+			focusOnSelect: true,
+			draggable: false
+		});
+	} else {
+		var content = $('.gallery-mobile .content');
+		content.slick({
+			arrows: true,
+			fade: true,
+			dots: false,
+			autoplay: true,
+			prevArrow: '<a href="#" class="arrow top"></a>',
+			nextArrow: '<a href="#" class="arrow bottom"></a>',
+			appendArrows: '.counter .arrows'
+		});
+	}
+
+	// indexNav.slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: nav,
+	// 	arrows: false,
+	// 	dots: false,
+	// 	fade: true,
+	// 	focusOnSelect: false,
+	// 	draggable: false
+	// });
+
 }
 function detectMobile(){
 	'use strict';
@@ -76,7 +105,6 @@ function detectMobile(){
 	// device detection
 	if( $('.isMobile').is(':visible') ) {
 	 	isMobile = true;
-	 	TweenMax.set('html',{overflowX:'hidden',position:'relative'});
 	}
 
 	if (isMobile === true) {

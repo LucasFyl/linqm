@@ -7,12 +7,16 @@ header {
 		z-index: 9999;
 		left: 8.1rem;
 		top: 6.3rem;
+		@include media($mobile) {
+			left: initial;
+			right: 35px;
+		}
 
 		outline: none;
 
 		&.black {
 			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-				background-color: #949494;
+				background-color: #666;
 			}
 			&.is-active {
 				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -36,8 +40,33 @@ header {
 	right: 8.1rem;
 	bottom: 6.3rem;
 
+	@include underlined(transparent, #fff);
+
 	&.menu-open {
 		z-index: 99999;
-		text-decoration: underline;
 	}
+
+	@include media($mobile) {
+		width: 100%;
+		text-align: center;
+		left: 0; right: 0;
+		font-size: 15px;
+
+		body.about &, 
+		body.team &,
+		body.employers-job-seekers & {
+			top: 5rem;
+			left: 35px;
+			right: initial; 
+			color: #666666;
+		    width: auto;
+		    height: 20px;
+		    font-size: 20px;
+		    &.menu-open {
+		    	color: white;
+		    }
+		}
+	}
+
+
 }

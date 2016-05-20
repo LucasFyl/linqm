@@ -26,6 +26,19 @@ img {
     display: block;
   }
 }
+
+.hide-mobile {
+  @include media($mobile) {
+    display: none !important;
+    visibility: hidden;
+  }
+}
+.hide-desktop {
+  @include media($desktop) {
+    display: none !important;
+    visibility: hidden;
+  }
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

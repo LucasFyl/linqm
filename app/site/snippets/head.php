@@ -20,7 +20,11 @@
 
     </head>
     <body class="<?php echo $page->uid() ?>">
-        <?php snippet('loader') ?>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <div class="isMobile"></div>
+
+        <?php snippet('loader') ?>
+    

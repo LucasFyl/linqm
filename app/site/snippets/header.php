@@ -9,5 +9,5 @@
 	
 
 
-<a href="mailto:hello@linqm.com" class="contact-link">hello@linqm.com</a>
+<a href="mailto:hello@linqm.com" class="contact-link"><span>hello@linqm.com</span></a>
 

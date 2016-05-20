@@ -1,4 +1,6 @@
 main.landing {
+	height: 100vh;
+	@include overlay(rgba(0,0,0,0.3));
 	
 	.logo {
 		text-indent: -9999px;
@@ -11,11 +13,16 @@ main.landing {
 		position: relative;
 		top: 6rem;
 		z-index: 9999;
+		@include media($mobile) {
+			margin: 0;
+			left: 35px;
+		}
 	}
 
 	.text {
 		@include center(vertical);
 		text-align: center;
+		z-index: 999;
 
 		h2 {
 			font-family: $contrast;
@@ -23,6 +30,11 @@ main.landing {
 			font-size: 1.75rem;
 			text-transform: uppercase;
 			letter-spacing: .2rem;
+			@include media($mobile) {
+				max-width: 80%;
+				margin-left: 10%;
+				font-size: 15px;
+			}
 		}
 		
 		h1 {
@@ -33,10 +45,18 @@ main.landing {
 			text-transform: none;
 			max-width: 85rem;
 			margin: 0 auto;
+			@include media($mobile) {
+			    max-width: 90%;
+	    		margin-left: 5%;
+			}
 		}
 
 		.btn {
 			margin: 6rem auto;
+			@include media($mobile) {
+				transform: scale(1.5);
+				margin-top: 15rem;
+			}
 		}
 	}
 }

@@ -1,3 +1,25 @@
+@mixin underlined($color, $hover-color) {
+  > span {
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: " ";
+      @include size(100% 1px);
+      position: absolute;
+      left: 0; right: 0;
+      bottom: -0.5rem;
+
+      background-color: $color;
+      @include transition(background-color 0.25s ease);
+    }
+  }
+  &:hover {
+    > span::after {
+      background-color: $hover-color;
+      @include transition(background-color 0.25s ease);
+    }
+  }
+}
 
 @mixin overlay($color) {
     &:before {
@@ -10,7 +32,6 @@
       @include transition(all 0.25s $ease-out-sine);
     }
 }
-
 
 @mixin center($value) {
   @if $value == 'vertical' {

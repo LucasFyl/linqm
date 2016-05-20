@@ -1,7 +1,11 @@
 
 .main {
-  
-  @include size(100vw 100vh);
+  @include media($desktop) {
+    @include size(100vw 100vh);
+  }
+  @include media($mobile) {
+    @include size(100vw 100%);
+  }
   position: relative;
   background-size:cover;
   overflow: hidden;
@@ -32,15 +36,35 @@
   &.white {
     color: white;
     border-color: white;
+
+    &:hover {
+      background-color:rgba(0,0,0,0.5);
+      @include transition(background 0.75s $ease-out-sine);
+    }
   }
-  
-
 }
-
-
 .vertical-center {
   @include center(vertical);
 }
 .horizontal-center {
   @include center(horizontal);
+}
+.arrow {
+  display: block;
+  @include size(2rem 1.3rem);
+  position: absolute;
+  z-index: 9999;
+  left: 8rem;
+
+  &.top {
+    top: 0;
+    background: url('../images/asset-caret-up.png') no-repeat center center;
+    background-size: 2rem 1.3rem;
+  }
+
+  &.bottom {
+    bottom: 0;
+    background: url('../images/asset-caret-down.png') no-repeat center center;
+    background-size: 2rem 1.3rem;
+  }
 }

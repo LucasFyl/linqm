@@ -13,11 +13,11 @@
 
     <p class="super-title"><?php echo $page->title()->html() ?></p>
 
-    <div class="half right">
-    	<?php if($image = $page->image()): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-        <?php endif ?>
+    <?php if($image = $page->image()): ?>
+    <div class="half right"
+        style="background:url('<?php echo $image->url() ?>') no-repeat center center;background-size:cover;">
     </div>
+    <?php endif ?>
 
   </main>
 

@@ -29,11 +29,16 @@
 				line-height: 6.5rem;
 				color: white;
 				text-decoration: none;
+				opacity: 0.6;
+				@include transition(all 0.25s $ease-in-out-sine);
+				&:hover {
+					opacity: 1;
+				}
 			}
 
 			&.active {
 				a {
-					text-decoration: underline;
+					opacity: 1;
 				}
 			}
 		}
@@ -43,6 +48,9 @@
 		position: absolute;
 		width: 100%;
 		bottom: 6.5rem;
+		@include media($mobile) {
+			bottom: 15rem;
+		}
 
 		ul {
 			list-style: none;
@@ -55,7 +63,6 @@
 				@include size(6rem);
 				display: block;
 				float: left;
-				border: 1px solid white;
 				border-radius: 100%;
 				margin-right: 4.5rem;
 
@@ -82,6 +89,12 @@
 						background: url('../images/asset-icon-twitter.png') no-repeat center center;	
 						background-size: 2.1rem 1.75rem;
 					}
+				}
+				
+				@include transition(all 0.25s ease-out);
+				&:hover {
+					border: 1px solid white;
+					@include transition(all 0.25s ease-in);
 				}
 			}
 		}

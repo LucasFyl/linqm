@@ -2,7 +2,7 @@
 <?php snippet('header') ?>
 
   <main class="main landing" role="main" id="landing"
-  		style="background-image:url(<?php echo $page->image('landing.jpg')->url() ?>)">
+  		style="background:url(<?php echo $page->image('landing.jpg')->url() ?>) no-repeat center center;background-size:cover;">
 	
 	<h3 class="logo">Linqm</h3>
 
