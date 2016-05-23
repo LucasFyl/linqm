@@ -70,6 +70,8 @@
 					display: block;
 					@include size(100%);
 					text-indent: -9999px;
+					position: relative;
+					z-index: 99;
 				}
 				&.linkedin {
 					a {
@@ -91,10 +93,24 @@
 					}
 				}
 				
-				@include transition(all 0.25s ease-out);
-				&:hover {
+				&:after {
+					content: " ";
+					@include size(6rem);
+					border-radius: 100%;
 					border: 1px solid white;
-					@include transition(all 0.25s ease-in);
+					position: absolute;
+					z-index: 88;
+					left: 0; top: 0;
+					@include transform(scale(0.5));
+					opacity: 0;
+					@include transition(all 0.25s $ease-in-expo);
+				}
+				&:hover {
+					&:after {
+						@include transform(scale(1));
+						opacity: 1;
+						@include transition(all 0.25s $ease-out-expo);
+					}
 				}
 			}
 		}

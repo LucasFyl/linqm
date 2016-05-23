@@ -4,14 +4,13 @@ main#gallery {
 		position: relative;
 		overflow: hidden;
 
-		> .btn{
-			position: absolute;
-			bottom: 6.5rem;
-			left: 2rem;
+		> .btn-wrap {
+			display: block;
+			bottom: 6.5rem; 
+			width: 44rem;
+			padding-right: 5rem;
+			margin: 0 auto;
 			z-index: 99;
-			@include media($desktop) {
-				left: 15.5rem;
-			}
 		}
 
 		.text {

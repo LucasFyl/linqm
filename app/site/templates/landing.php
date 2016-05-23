@@ -9,7 +9,11 @@
     <div class="text">
 		<h2><?php echo $page->subTitle()->html() ?></h2>
 		<h1><?php echo $page->landingTitle()->html() ?></h1>
-		<a href="<?php echo $site->url() ?>/<?php echo $page->btnLink()->html() ?>" class="btn white"><?php echo $page->btnText() ?></a>
+		<?php if($page->id() === 'contact'): ?>
+			<a href="mailto:<?php echo $page->btnLink()->html() ?>" class="btn white"><?php echo $page->btnText() ?></a>
+		<?php else: ?>
+			<a href="<?php echo $site->url() ?>/<?php echo $page->btnLink()->html() ?>" class="btn white"><?php echo $page->btnText() ?></a>
+		<?php endif; ?>
     </div>
 
   </main>

@@ -23,7 +23,9 @@
     		<?php endforeach; ?>
     	</div>
 
-		<a href="<?php echo $page->btnLink() ?>" class="btn red"><?php echo $page->btnText() ?></a>
+        <div class="btn-wrap">
+            <a href="<?php echo $page->btnLink() ?>" class="btn red"><?php echo $page->btnText() ?></a>
+        </div>
     </div>
 
     <div class="half right hide-mobile">

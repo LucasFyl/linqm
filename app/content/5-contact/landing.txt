@@ -1,19 +1,17 @@
-title: Contact
+Title: Contact
 
 ----
 
-landingTitle: Let Linqm start turning your recruiting stress into success.
+Landingtitle: Let Linqm start turning your recruiting stress into success.
 
 ----
 
-subTitle: Contact Us
+Subtitle: Contact Us
 
 ----
 
-btnText: Get in touch
+Btntext: Get in touch
 
 ----
 
-btnLink:
-
-
+Btnlink: hello@linqm.com

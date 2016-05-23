@@ -10,4 +10,4 @@ Btntext: Learn more about our team
 
 ----
 
-Btnlink: /team
+Btnlink: team
