@@ -43,74 +43,74 @@
 			}
 		}
 	}
+}
 
-	.social {
-		position: absolute;
-		width: 100%;
-		bottom: 6.5rem;
-		@include media($mobile) {
-			bottom: 15rem;
-		}
+.social {
+	position: absolute;
+	width: 100%;
+	bottom: 6.5rem;
+	@include media($mobile) {
+		bottom: 15rem;
+	}
 
-		ul {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			display: inline-block;
-			@include center(horizontal);
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		@include center(horizontal);
 
-			li {
-				@include size(6rem);
+		li {
+			@include size(6rem);
+			display: block;
+			float: left;
+			border-radius: 100%;
+			margin-right: 4.5rem;
+
+			a {
 				display: block;
-				float: left;
-				border-radius: 100%;
-				margin-right: 4.5rem;
-
+				@include size(100%);
+				text-indent: -9999px;
+				position: relative;
+				z-index: 99;
+			}
+			&.linkedin {
 				a {
-					display: block;
-					@include size(100%);
-					text-indent: -9999px;
-					position: relative;
-					z-index: 99;
+					background: url('../images/asset-icon-linkedin.png') no-repeat center 45%;	
+					background-size: 2.1rem;
 				}
-				&.linkedin {
-					a {
-						background: url('../images/asset-icon-linkedin.png') no-repeat center 45%;	
-						background-size: 2.1rem;
-					}
+			}
+			&.facebook {
+				a {
+					background: url('../images/asset-icon-facebook.png') no-repeat center center;	
+					background-size: 1rem 2.1rem;
 				}
-				&.facebook {
-					a {
-						background: url('../images/asset-icon-facebook.png') no-repeat center center;	
-						background-size: 1rem 2.1rem;
-					}
+			}
+			&.twitter {
+				margin-right: 0;
+				a {
+					background: url('../images/asset-icon-twitter.png') no-repeat center center;	
+					background-size: 2.1rem 1.75rem;
 				}
-				&.twitter {
-					margin-right: 0;
-					a {
-						background: url('../images/asset-icon-twitter.png') no-repeat center center;	
-						background-size: 2.1rem 1.75rem;
-					}
-				}
-				
+			}
+			
+			&:after {
+				content: " ";
+				@include size(6rem);
+				border-radius: 100%;
+				border: 1px solid white;
+				position: absolute;
+				z-index: 88;
+				left: 0; top: 0;
+				@include transform(scale(0.5));
+				opacity: 0;
+				@include transition(all 0.25s $ease-in-expo);
+			}
+			&:hover {
 				&:after {
-					content: " ";
-					@include size(6rem);
-					border-radius: 100%;
-					border: 1px solid white;
-					position: absolute;
-					z-index: 88;
-					left: 0; top: 0;
-					@include transform(scale(0.5));
-					opacity: 0;
-					@include transition(all 0.25s $ease-in-expo);
-				}
-				&:hover {
-					&:after {
-						@include transform(scale(1));
-						opacity: 1;
-						@include transition(all 0.25s $ease-out-expo);
-					}
+					@include transform(scale(1));
+					opacity: 1;
+					@include transition(all 0.25s $ease-out-expo);
 				}
 			}
 		}

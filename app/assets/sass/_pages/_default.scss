@@ -42,6 +42,23 @@ main.default, main#gallery {
 				margin: 6rem auto;
 			}
 		}
+
+		.hide-desktop {
+			height: 50rem;
+			margin-top: 5rem;
+			display: flex;
+			justify-content: center;
+			@include overlay(rgba(0,0,0,0.3));
+			overflow: hidden;
+			position: relative;
+
+			a {
+			    height: 6rem;
+			    top: 44%;
+			    z-index: 99;
+			    @include transform(scale(1.5));
+			}
+		}
 	}
 
 	.right {

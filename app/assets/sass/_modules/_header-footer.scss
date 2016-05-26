@@ -51,6 +51,7 @@ header {
 		text-align: center;
 		left: 0; right: 0;
 		font-size: 15px;
+		position: absolute;
 
 		body.about &, 
 		body.team &,
@@ -67,6 +68,10 @@ header {
 		    }
 		}
 	}
+	@include media(max-width 360px) {
+		bottom: 2rem;
+	}
+
 
 
 }

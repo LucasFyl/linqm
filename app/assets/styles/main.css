@@ -868,6 +868,11 @@ html {
     font-size: 40%;
   }
 }
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   position: relative;
@@ -1827,6 +1832,7 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
     left: 0;
     right: 0;
     font-size: 15px;
+    position: absolute;
   }
   body.about .contact-link, body.team .contact-link, body.employers-job-seekers .contact-link {
     top: 5rem;
@@ -1839,6 +1845,11 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   }
   body.about .contact-link.menu-open, body.team .contact-link.menu-open, body.employers-job-seekers .contact-link.menu-open {
     color: white;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact-link {
+    bottom: 2rem;
   }
 }
 
@@ -1883,17 +1894,18 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
 #menu nav li.active a {
   opacity: 1;
 }
-#menu .social {
+
+.social {
   position: absolute;
   width: 100%;
   bottom: 6.5rem;
 }
 @media screen and (max-width: 480px) {
-  #menu .social {
+  .social {
     bottom: 15rem;
   }
 }
-#menu .social ul {
+.social ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1902,7 +1914,7 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   left: 50%;
   transform: translateX(-50%);
 }
-#menu .social ul li {
+.social ul li {
   height: 6rem;
   width: 6rem;
   display: block;
@@ -1910,7 +1922,7 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   border-radius: 100%;
   margin-right: 4.5rem;
 }
-#menu .social ul li a {
+.social ul li a {
   display: block;
   height: 100%;
   width: 100%;
@@ -1918,22 +1930,22 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   position: relative;
   z-index: 99;
 }
-#menu .social ul li.linkedin a {
+.social ul li.linkedin a {
   background: url("../images/asset-icon-linkedin.png") no-repeat center 45%;
   background-size: 2.1rem;
 }
-#menu .social ul li.facebook a {
+.social ul li.facebook a {
   background: url("../images/asset-icon-facebook.png") no-repeat center center;
   background-size: 1rem 2.1rem;
 }
-#menu .social ul li.twitter {
+.social ul li.twitter {
   margin-right: 0;
 }
-#menu .social ul li.twitter a {
+.social ul li.twitter a {
   background: url("../images/asset-icon-twitter.png") no-repeat center center;
   background-size: 2.1rem 1.75rem;
 }
-#menu .social ul li:after {
+.social ul li:after {
   content: " ";
   height: 6rem;
   width: 6rem;
@@ -1947,7 +1959,7 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   opacity: 0;
   transition: all 0.25s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
-#menu .social ul li:hover:after {
+.social ul li:hover:after {
   transform: scale(1);
   opacity: 1;
   transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
@@ -2028,8 +2040,38 @@ main.landing .text .btn {
 }
 @media screen and (max-width: 480px) {
   main.landing .text .btn {
-    transform: scale(1.5);
-    margin-top: 15rem;
+    transform: scale(1.3);
+    margin-top: 5rem;
+  }
+}
+main.landing .social {
+  position: relative;
+  left: initial;
+  bottom: initial;
+  transform: none;
+}
+main.landing .social ul {
+  margin-top: 5rem;
+  left: initial;
+  transform: none;
+}
+@media screen and (max-width: 360px) {
+  main.landing .social ul {
+    margin-top: 0rem;
+  }
+}
+main.landing .social ul li {
+  position: relative;
+}
+main.landing .social ul li:hover {
+  border: none;
+}
+@media screen and (max-width: 480px) {
+  main.landing .social ul li {
+    border: 1px solid white;
+  }
+  main.landing .social ul li:after, main.landing .social ul li:before {
+    content: none;
   }
 }
 
@@ -2078,6 +2120,33 @@ main.default .left .scroller p, main#gallery .left .scroller p {
 }
 main.default .left .scroller .btn, main#gallery .left .scroller .btn {
   margin: 6rem auto;
+}
+main.default .left .hide-desktop, main#gallery .left .hide-desktop {
+  height: 50rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+main.default .left .hide-desktop:before, main#gallery .left .hide-desktop:before {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+main.default .left .hide-desktop a, main#gallery .left .hide-desktop a {
+  height: 6rem;
+  top: 44%;
+  z-index: 99;
+  transform: scale(1.5);
 }
 main.default .right, main#gallery .right {
   position: relative;

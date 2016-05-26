@@ -150,7 +150,7 @@ function landingAnimLanding() {
 		.staggerFromTo('.landing h1, .landing h2', 0.5, {y:50}, {y:0,opacity:1,ease:Power1.easeOut}, 0.2)
 		.to('h3.logo', 0.5, {opacity:1})
 		.fromTo('.menu-trigger, .contact-link', 0.5, {y:-20}, {y:0,opacity:1,ease:Power2.easeOut})
-		.to('a.btn', 0.5, {opacity:1}, "+=0.5");
+		.to('a.btn, .text .social', 0.5, {opacity:1}, "+=0.5");
 
 	if ($('body.home').length) {
 		setTimeout(function(){landingTl.play();}, 3500);
