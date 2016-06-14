@@ -8,7 +8,7 @@
     	<div class="text">
             <div class="vertical-center">
                 <h1><?php echo $page->title()->html() ?></h1>
-                <p><?php echo $page->text()->kirbyText() ?></p>
+                <?php echo $page->text()->kirbytext() ?>
             </div>
         </div>
 
@@ -17,7 +17,7 @@
 			<div class="text">
                 <div class="vertical-center">
                     <h2><?php echo $subpage->title()->html() ?></h2>
-                    <p><?php echo $subpage->text()->kirbyText() ?></p>
+                    <?php echo $subpage->text()->kirbytext() ?>
                 </div>
 	    	</div>
     		<?php endforeach; ?>

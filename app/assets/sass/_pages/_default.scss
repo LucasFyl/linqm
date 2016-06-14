@@ -37,6 +37,10 @@ main.default, main#gallery {
 			p {
 				font-size: 2rem;
 				letter-spacing: 0;
+				@include media($mobile) {
+					font-size: 3.5rem;
+					line-height: 1.5;
+				}
 			}
 			.btn {
 				margin: 6rem auto;

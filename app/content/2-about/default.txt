@@ -4,12 +4,29 @@ Title: About
 
 Text: 
 
-Providing a full range of staffing and recruiting services from start-up to Fortune 500 companies, we utilize a new age recruiting methodology that has proven success. LINQM, Inc. delivers highly selective matching between our clientele and top qualified contract, contract-to-hire, and permanent employees. LINQM, inc. places importance on learning the culture, benefits, and structure of each company. As positions cross our desks, we implement our new age methodology to find bothactive and passive job seekers that fit each component required of the position and company culture alike. 
- 
- 
-Amongst many accomplishments, Linqm has hired over 250 professionals for the #1 fastest growing private company from 2013 – Present, helping grow the company from 28 to now over 600 employees. This client’s revenue has grown from ~100MM (2013) to now over 1B taking multiple financial and SAAS products across the entire state of CA and actively launching into other states. Linqm, Inc. hired across all lines of business with a massively high retention rate and very low turnovers on permanent hire positions filled.
+LINQM was developed with the idea of “linqing” exceptional companies with top qualified professionals through a modern approach.  By utilizing new methods and retaining top talent of our own we have managed to become one of the fastest growing privately held companies in San Diego.
 
-Working with over 60 clients, we are able to recruit for companies that have qualities such as 15 quarters of continuous growth, full benefit packages, catered lunches, hourly, salary, and bonus opportunities. We work closely with our Clients learning important factors beyond compensation, including culture and benefits. Many have made the list for Best Places to Work and Fastest Growing Private Companies, of which several have finished in the top 10. This allows us to strongly believe in the incredible opportunity we are presenting both active and passive job seekers. PACE initiatives: Linqm has proven to be a national leader in hiring for PACE financing companies on all facets of the industry. Linqm, Inc. is one of the fastest growing private companies in San Diego and already showing an ~400% revenue increase from 2013 to 2015 YOYOY.
+Providing a full range of recruitment services from start-up to Fortune 500 companies, we utilize a new age methodology that has proven success.  LINQM delivers highly selective matching between our clientele and top qualified contract, contract-to-hire, and permanent employees.
+
+The LINQM team focuses on creating a long-term partnership with our clients.  We work closely to learn important factors beyond compensation, including culture and benefits.  A number of our clients have made the top 10 on lists such as Best Places to Work and Fastest Growing Private Companies. This allows us to strongly believe in the incredible opportunity we are presenting both active and passive job seekers.
+
+Amongst many accomplishments, LINQM has hired over 240 professionals for one of the fastest growing private companies over the past few years, helping grow the company from ground up to over 650 employees.  LINQM hired across all lines of business with a high retention rate on permanent positions filled.
+
+At LINQM we are focused and detailed.  It’s engraved in our company culture that we find the right professional and never wait for them to find us.  Our founder and CEO has over a decade of experience in employee placement and further utilized this knowledge to create an effective methodology that has proven success time and time again.
+
+LINQM’S Methodology, LINQM strives to target all potential employees. We are unconventional in that we use a modern approach to speak with all potentials currently holding a similar role, regardless if they are advertised as seeking a new opportunity.
+
+New web based platforms and applications have created an opportunity to reach larger audiences quickly and effectively.  LINQM has dedicated time and resources to train our recruiters on becoming the experts at these new technologies in order to connect and network with the absolute best talent.
+
+Our approach is aggressive in recruitment as well as selling our clients to all relevant potentials.  We focus on promoting our clients to further their exposure.
+
+Our recruiters take the initiative to ask detailed and specific questions from employees currently holding the roles we are seeking to fill.  It is a priority for our team to be proactive in thoroughly understanding the company, the industry, and the position ensuring we are taking as little time from our clients as possible.
+
+Communication is key.  Time is money and our methods require extensive conversations with potential employees to ensure we only submit top notch professionals with proper expectations.
+
+Our founder, Aaron Rines started LINQM in 2013 as he wanted to bring a new age methodology to recruiting.  Prior to starting LINQM, Aaron was the CEO of a privately held recruiting agency.  In this role he utilized his new age recruitment methodology and was responsible for streamlining all operations, business development, full P&L, as well as hands on training and associate development.   Through his efforts he delivered triple digit growth over the course of two years.
+
+Aaron started his recruiting career at one of the largest recruiting and consulting agencies in the nation.  He was responsible for key national accounts and quickly established himself as a top recruitment leader.  Prior to recruiting he worked with the largest lender in the US as an Account Executive and Team Leader becoming the #1 producer in the region.
 
 ----
 
@@ -18,3 +35,7 @@ Btntext: Employers & Job Seekers
 ----
 
 Btnlink: employers-job-seekers
+
+----
+
+Titlefontsize: 38rem

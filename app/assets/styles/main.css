@@ -1604,7 +1604,7 @@ h6,
   line-height: 1.58rem;
 }
 
-p {
+p, li {
   font-size: 20px;
   line-height: 30px;
   font-size: 2rem;
@@ -1769,15 +1769,36 @@ small {
   }
 }
 
+header .helper {
+  font-family: "FuturaStdMedium", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  float: left;
+  position: fixed;
+  z-index: 9999;
+  left: 11.5rem;
+  top: 6.1rem;
+}
+@media screen and (max-width: 480px) {
+  header .helper {
+    display: none;
+  }
+}
+header .helper.black {
+  color: #666;
+}
+header .helper.menu-open {
+  color: white;
+}
 header .menu-trigger {
   height: 1.3rem;
   width: 1.9rem;
   cursor: pointer;
+  outline: none;
   position: fixed;
   z-index: 9999;
   left: 8.1rem;
   top: 6.3rem;
-  outline: none;
 }
 @media screen and (max-width: 480px) {
   header .menu-trigger {
@@ -1858,7 +1879,7 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   z-index: 9998;
   height: 100%;
   width: 100%;
-  background: rgba(252, 84, 87, 0.78);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
 }
@@ -2118,6 +2139,12 @@ main.default .left .scroller p, main#gallery .left .scroller p {
   font-size: 2rem;
   letter-spacing: 0;
 }
+@media screen and (max-width: 480px) {
+  main.default .left .scroller p, main#gallery .left .scroller p {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+}
 main.default .left .scroller .btn, main#gallery .left .scroller .btn {
   margin: 6rem auto;
 }
@@ -2212,6 +2239,12 @@ main#gallery .left .text {
 main#gallery .left .text h1, main#gallery .left .text h2 {
   margin-bottom: 5.5rem;
 }
+main#gallery .left .text ul {
+  margin-left: -20px;
+}
+main#gallery .left .text li {
+  margin-bottom: .5rem;
+}
 main#gallery .left .gallery-content {
   width: 44rem;
   height: calc(100vh - 14rem);
@@ -2286,6 +2319,7 @@ main#gallery .right .gallery-nav li span.index {
   top: -10rem;
   right: 0;
   letter-spacing: 3rem;
+  line-height: 1;
   z-index: -1;
   opacity: .73;
 }

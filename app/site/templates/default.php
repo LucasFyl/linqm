@@ -16,7 +16,7 @@
         <?php endif ?>
     </div>
 
-    <p class="super-title"><?php echo $page->title()->html() ?></p>
+    <p class="super-title" style="font-size:<?php echo $page->titleFontSize() ?>;line-height:<?php echo $page->titleFontSize() ?>;"><?php echo $page->title()->html() ?></p>
 
     <?php if($image = $page->image()): ?>
     <div class="half right"

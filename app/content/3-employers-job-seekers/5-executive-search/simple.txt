@@ -2,7 +2,7 @@ Title: Executive Search
 
 ----
 
-Text: C-Level executives (CEO, COO, CTO, CIO, CMO), Vice President (Technology, FInance, Marketing, Operations, Compliance, Call Center).
+Text: C-Level executives (CEO, COO, CTO, CIO, CMO), Vice President (Technology, Finance, Marketing, Operations, Compliance, Call Center), Director.
 
 ----
 

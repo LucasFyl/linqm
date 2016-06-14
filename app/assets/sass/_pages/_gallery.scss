@@ -21,6 +21,12 @@ main#gallery {
 			h1, h2 {
 				margin-bottom: 5.5rem;
 			}
+			ul {
+				margin-left: -20px;
+			}
+			li {
+				margin-bottom: .5rem;
+			}
 		}
 
 		.gallery-content {
@@ -95,6 +101,7 @@ main#gallery {
 				    top: -10rem;
 				    right: 0;
 				    letter-spacing: 3rem;
+				    line-height: 1;
 				    z-index: -1;
 				    opacity: .73;
 				    > span {

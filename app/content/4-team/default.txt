@@ -1,14 +1,33 @@
-Title: Team
+Title: Success
 
 ----
 
 Text: 
 
-Aaron Rines is the CEO of Linqm, Inc , a Technical, Digital Marketing, Financial & Administrative Services, as well as PACE (Property Assessed Clean Energy) Recruiting Agency. Linqm currently has a portfolio of over 60 clients and has successfully brought many to fastest growing companies lists here locally in San Diego. On a national level Linqm has become a primary resource for one of the fastest growing companies and Mr. Rines was given the initiative to hire executives into a multi-state expansion. 
+At LINQM we mark our reputation by our client’s success.  Our drive and motivation is rooted by the quality we provide to our clients by linqing them with exceptional talent.  Here is what our clients have to say about us.
 
-Through a new age recruiting methodology Linqm has exceeded over 400% revenue growth in the first 3 years of operating. Mr. Rines started his recruiting career at Kforce, a nationally recognized multi-billion dollar publicly traded company. Mr. Rines was responsible for some of the largest national accounts as well as southern CA territories and established himself quickly as a top producer. Prior to joining Kforce, Mr. Rines worked with the largest lender in the US (2006 -2008) as an Account Executive and Team Leader several times accomplishing the #1 spot out of 3300 in the region. 
+_“Aaron and Linqm continue to be of great value to me and my organization. Having access to such a tremendously knowledgeable & resourceful individual means you'll have the peace of mind knowing they'll deliver only the best.   Aaron always carries himself professionally and works efficiently with our time to provide solutions and answers to our questions. We’ve yet to stump him. We highly recommend using Aaron and Linqm for their recruiting and hiring expertise.”_ 					
+**  - Chris Groshong President/CEO of CoinStructive, Inc.**
 
-Prior to founding Linqm, Mr. Rines accepted the opportunity as CEO of Decorus Personnel, bringing a struggling privately owned recruiting agency to profitability in just over 2 years. In this role Mr. Rines utilized his new age recruitment methodology and was responsible for streamlining all operations, business development, establishing contracts, full P&L, as well as hands on training and development of entire staff.
+_“It's very rare to come across a recruiter that actually takes the time to make sure both the company, and candidate are happy with the new placement AFTER it's all said and done. Aaron is truly one of a kind in his field, and recommend him without hesitation to anyone lucky enough to catch his attention and get on his radar!”_  
+**  - Mark, Marketing Technology Consultant**
+
+
+_“I partnered with Aaron and the Linqm team while working for a technology start-up. The nature of our environment was extremely fast paced, constantly changing and always demanding. Linqm did an excellent job dealing (at times) with ambiguity when our process would change and always stayed the course. Our relationship was successful due to constant communication and collaboration you would expect from a partner. I would highly recommend the Linqm team to any Hiring Managers and/or candidates if you're looking for a partner who knows and understands the corporate landscape at a local and national level and truly cares about providing exceptional results.”_
+**  - Brian Andrews**
+
+
+_“When Linqm reached out to me, I was surprised. They were very professional but what really stood out to me was their personal touch in working with me. They were not pushy or robotic like your typical recruiting firms -- they took their time. And I had the feeling that they were different and that they would go the extra mile to make sure candidates such as myself secure career opportunities that fit my needs. Because of that, I knew Linqm was going to take care of me when the time was right and they did. 
+I never met an organization that was so attentive to details with strong follow through. They are great listeners and know prospective opportunities well enough to answer many initial questions. I strongly recommend going with Linqm as a candidate.”_
+**  - Jerald Chau**
+
+_“I have worked with Aaron on several different occasions, each time he shows a level of service and value that rivals only the best. He has always displayed a tenacious mentality and his leadership ability only comes natural. I highly recommend his work and production to any person or client now and in the future.”_ 
+**  - Niko, National Accounts Delivery**
+
+_“I am overjoyed to write my first recommendation about the man who completely changed the way I think about social media and job hunting in general. He provided quite possibly the most beneficial meeting of my life. 
+In just 1.5 hours, he helped me re-craft my digital persona on LinkedIn and bolster my network immeasurably. Within 24 hours, I had a job offer and two requests for freelance work. 
+If you want real results, you want to go to the top-tier expert in the field. That's exactly who Aaron is as a recruiter, and I couldn't be more thankful for his help. I'd recommend him to anyone: colleagues, family, friends. If he can do for them just 1/10 of what he's done for me, it would be well worth it.”_ 
+**  - Ryan, Digital Marketing Executive**
 
 ----
 
@@ -17,3 +36,7 @@ Btntext: Employers & Job Seekers
 ----
 
 Btnlink: /employers-job-seekers
+
+----
+
+Titlefontsize: 29rem

@@ -4,6 +4,7 @@
 	    <span class="hamburger-inner"></span>
 	  </span>
 	</button>
+	<span class="helper">Menu</span>
 	<?php snippet('menu') ?>
 </header>
 	

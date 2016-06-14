@@ -2,12 +2,7 @@ Title: Financial & Administrative
 
 ----
 
-Text: 
-
-Sales (inside, outside, and management),
-Compliance (Regulatory, Security, QC, QA, Documentation), Accounting (Payroll, A/P, A/R, Bookkeeper, Controller, Accounting Manager), Lending Operations (Processors, Underwriters, Closers, Funders, Coordinators),
-Administrative (Receptionist, Admin Assistant, Executive Assistant, Facility Maintenance), 
-Call Center, Trainers, Operations.
+Text: Sales (inside, outside, and management), Compliance (Regulatory, Security, QC, QA, Documentation), Accounting (Payroll, A/P, A/R, Bookkeeper, Controller, Accounting Manager), Lending Operations (Processors, Underwriters, Closers, Funders, Coordinators), Administrative (Receptionist, Admin Assistant, Executive Assistant, Facility Maintenance),  Call Center, Trainers, Operations.
 
 ----
 

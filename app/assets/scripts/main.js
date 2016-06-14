@@ -17,6 +17,8 @@ function initPage(){
 	'use strict';
 
 	detectMobile();
+	$(document).on('click', '.menu-trigger', setMenu);
+	$(document).on('click', '.helper', setMenu);
 
 	if($('body.home').length) {
 		hideFullLoader();
@@ -26,18 +28,15 @@ function initPage(){
 
 	if($('main.default').length || $('main#gallery').length) {
 		$('.menu-trigger').addClass('black');
+		$('.helper').addClass('black');
 	}
-	$(document).on('click', '.menu-trigger', setMenu);
 
 	if ( $('main.default').length ) {
 		landingAnimDefault();
 		superTitleAnim();
-	}
-	if ( $('main.landing').length ) {
-		landingAnimLanding();
-	}
-
-	if ( $('main#gallery').length ) {
+	} else if ( $('main.landing').length ) {
+		// landingAnimLanding();
+	} else if ( $('main#gallery').length ) {
 		initGallery();
 	}
 }
@@ -57,7 +56,7 @@ function initGallery() {
 			arrows: true,
 			fade: true,
 			dots: false,
-			autoplay: true,
+			autoplay: false,
 			prevArrow: '<a href="#" class="arrow top"></a>',
 			nextArrow: '<a href="#" class="arrow bottom"></a>',
 			appendArrows: $('.gallery-nav'),
@@ -80,23 +79,12 @@ function initGallery() {
 			arrows: true,
 			fade: true,
 			dots: false,
-			autoplay: true,
+			autoplay: false,
 			prevArrow: '<a href="#" class="arrow top"></a>',
 			nextArrow: '<a href="#" class="arrow bottom"></a>',
 			appendArrows: '.counter .arrows'
 		});
 	}
-
-	// indexNav.slick({
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	asNavFor: nav,
-	// 	arrows: false,
-	// 	dots: false,
-	// 	fade: true,
-	// 	focusOnSelect: false,
-	// 	draggable: false
-	// });
 
 }
 function detectMobile(){
@@ -124,7 +112,7 @@ function hideFullLoader(){
 			.to('#loader-wrap', 0.75, {width:0,ease:Power3.easeIn}, "+=0.5")
 			.to('#loader-wrap .logo', 0.4, {opacity:0}, "-=0.5")
 			.set('#loader-wrap', {display:'none'})
-			.play();
+			.timeScale(1.2).play();
 
 }
 function hideLoader(){
@@ -196,16 +184,18 @@ function setMenu() {
 
 	if ( !$('.menu-trigger').hasClass('menu-open') ) {
 		menuTl
-			.to('.main > *', 0.5, {opacity:0})
+			// hide main and set components
+			.to('.main .text, .main .left', 0.5, {opacity:0})
 			.set('.menu-trigger', {className:'+=is-active'}, '-=0.5')
 			.set('#menu nav li', {y:-30, opacity:0})
 			.set('#menu .social li', {y:0, opacity:0})
-			.set('#menu, .menu-trigger, .contact-link', {className:'+=menu-open'})
+			.set('#menu, .menu-trigger, .contact-link, .helper', {className:'+=menu-open'})
+			// display menu step by step
 			.to('#menu', 0.75, {opacity:1,ease:Power2.easeInOut})
 			.staggerTo('#menu nav li', 0.25, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
 			.to('#menu .social li', 0.25, {opacity:1,ease:Power2.easeOut}, '+=0.5')
 			.to('.logo', 0.25, {opacity:1}, '-=0.75')
-			.play();
+			.timeScale(1.7).play();
 	} else {
 		menuTl
 			.to('#menu nav li, #menu .social li', 0.3, {y:30,opacity:0,ease:Expo.easeIn})
