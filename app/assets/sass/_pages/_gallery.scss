@@ -12,6 +12,7 @@ main#gallery {
 			margin: 0 auto;
 			z-index: 99;
 		}
+		
 
 		.text {
 			width: 44rem;
@@ -20,12 +21,6 @@ main#gallery {
 			
 			h1, h2 {
 				margin-bottom: 5.5rem;
-			}
-			ul {
-				margin-left: -20px;
-			}
-			li {
-				margin-bottom: .5rem;
 			}
 		}
 
@@ -152,6 +147,11 @@ main#gallery {
 
 			.slick-list {
 				overflow: visible;
+
+				p {
+					font-size: 3rem;
+					line-height: 1.5;
+				}
 			}
 
 			span.index {

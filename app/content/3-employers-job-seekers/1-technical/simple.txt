@@ -2,19 +2,7 @@ Title: Technical
 
 ----
 
-Text: 
-
-- Web Designers (UX, UI, Visual, Graphic)
-- Web Developers, Software Engineers (.NET / LAMP stack, C#, Java, PHP, Ruby)
-- Front End Web Developers (JavaScript, Html, CSS, AngularJS, Bootstrap)
-- Mobile:  iOS / Android / Xamarin Development
-- QA testers (Automated, Manual - Web, Mobile-Selenium), Systems Engineer
-- Network Engineers
-- Database
-- Product Management (Marketing, Technical)
-- Program Management
-- Business Analyst
-- Data Analyst
+Text: Web Designers (UX, UI, Visual, Graphic), Web Developers, Software Engineers (.NET / LAMP stack, C#, Java, PHP, Ruby), Front End Web Developers (JavaScript, Html, CSS, AngularJS, Bootstrap), Mobile:  iOS / Android / Xamarin Development, QA testers (Automated, Manual - Web, Mobile-Selenium), Systems Engineer, Network Engineers, Database, Product Management (Marketing, Technical), Program Management, Business Analyst, Data Analyst
 
 ----
 

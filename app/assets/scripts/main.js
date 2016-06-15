@@ -20,11 +20,11 @@ function initPage(){
 	$(document).on('click', '.menu-trigger', setMenu);
 	$(document).on('click', '.helper', setMenu);
 
-	if($('body.home').length) {
-		hideFullLoader();
-	} else {
+	// if($('body.home').length) {
+		// hideFullLoader();
+	// } else {
 		hideLoader();
-	}
+	// }
 
 	if($('main.default').length || $('main#gallery').length) {
 		$('.menu-trigger').addClass('black');
@@ -35,7 +35,7 @@ function initPage(){
 		landingAnimDefault();
 		superTitleAnim();
 	} else if ( $('main.landing').length ) {
-		// landingAnimLanding();
+		landingAnimLanding();
 	} else if ( $('main#gallery').length ) {
 		initGallery();
 	}
@@ -138,13 +138,9 @@ function landingAnimLanding() {
 		.staggerFromTo('.landing h1, .landing h2', 0.5, {y:50}, {y:0,opacity:1,ease:Power1.easeOut}, 0.2)
 		.to('h3.logo', 0.5, {opacity:1})
 		.fromTo('.menu-trigger, .contact-link', 0.5, {y:-20}, {y:0,opacity:1,ease:Power2.easeOut})
-		.to('a.btn, .text .social', 0.5, {opacity:1}, "+=0.5");
+		.to('a.btn, .text .social', 0.5, {opacity:1}, "+=0.25")
+		.timeScale(1.2).play();
 
-	if ($('body.home').length) {
-		setTimeout(function(){landingTl.play();}, 3500);
-	} else {
-		setTimeout(function(){landingTl.play();}, 1000);
-	}
 }
 function landingAnimDefault() {
 	'use strict';
@@ -183,6 +179,7 @@ function setMenu() {
 	var menuTl = new TimelineMax({paused:true});
 
 	if ( !$('.menu-trigger').hasClass('menu-open') ) {
+		
 		menuTl
 			// hide main and set components
 			.to('.main .text, .main .left', 0.5, {opacity:0})
@@ -191,17 +188,20 @@ function setMenu() {
 			.set('#menu .social li', {y:0, opacity:0})
 			.set('#menu, .menu-trigger, .contact-link, .helper', {className:'+=menu-open'})
 			// display menu step by step
-			.to('#menu', 0.75, {opacity:1,ease:Power2.easeInOut})
+			.to('#menu', 0.75, {opacity:1,ease:Power2.easeInOut,onComplete:function(){$('.helper').html('Close');}})
 			.staggerTo('#menu nav li', 0.25, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
 			.to('#menu .social li', 0.25, {opacity:1,ease:Power2.easeOut}, '+=0.5')
 			.to('.logo', 0.25, {opacity:1}, '-=0.75')
 			.timeScale(1.7).play();
 	} else {
+
 		menuTl
 			.to('#menu nav li, #menu .social li', 0.3, {y:30,opacity:0,ease:Expo.easeIn})
 			.set('.menu-open', {className:'-=menu-open'})
 			.set('.menu-trigger', {className:'-=is-active'})
-			.to('.main > *', 0.5, {opacity:1})
+			.to('.main > *', 0.5, {opacity:1,onComplete:function(){
+				$('.helper').html('Menu');
+			}})
 			.play();
 	}
 }

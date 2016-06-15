@@ -2,7 +2,10 @@
 	position: fixed;
 	z-index: 9998;
 	@include size(100%);
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.55);
+	@include media($mobile) {
+		background: rgba(0, 0, 0, 0.75);
+	}
 
 	opacity: 0;
 	visibility: hidden;
@@ -76,24 +79,24 @@
 			}
 			&.linkedin {
 				a {
-					background: url('../images/asset-icon-linkedin.png') no-repeat center 45%;	
+					background: url('../images/asset-icon-linkedin.png') no-repeat center 45%;
 					background-size: 2.1rem;
 				}
 			}
 			&.facebook {
 				a {
-					background: url('../images/asset-icon-facebook.png') no-repeat center center;	
+					background: url('../images/asset-icon-facebook.png') no-repeat center center;
 					background-size: 1rem 2.1rem;
 				}
 			}
 			&.twitter {
 				margin-right: 0;
 				a {
-					background: url('../images/asset-icon-twitter.png') no-repeat center center;	
+					background: url('../images/asset-icon-twitter.png') no-repeat center center;
 					background-size: 2.1rem 1.75rem;
 				}
 			}
-			
+
 			&:after {
 				content: " ";
 				@include size(6rem);

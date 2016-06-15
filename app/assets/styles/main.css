@@ -1879,9 +1879,14 @@ header .menu-trigger.black.is-active .hamburger-inner, header .menu-trigger.blac
   z-index: 9998;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.55);
   opacity: 0;
   visibility: hidden;
+}
+@media screen and (max-width: 480px) {
+  #menu {
+    background: rgba(0, 0, 0, 0.75);
+  }
 }
 #menu.menu-open {
   visibility: visible;
@@ -2239,12 +2244,6 @@ main#gallery .left .text {
 main#gallery .left .text h1, main#gallery .left .text h2 {
   margin-bottom: 5.5rem;
 }
-main#gallery .left .text ul {
-  margin-left: -20px;
-}
-main#gallery .left .text li {
-  margin-bottom: .5rem;
-}
 main#gallery .left .gallery-content {
   width: 44rem;
   height: calc(100vh - 14rem);
@@ -2365,6 +2364,10 @@ main#gallery .gallery-mobile .content {
 }
 main#gallery .gallery-mobile .content .slick-list {
   overflow: visible;
+}
+main#gallery .gallery-mobile .content .slick-list p {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 main#gallery .gallery-mobile .content span.index {
   font-family: "FuturaStdMedium", sans-serif;

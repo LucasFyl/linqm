@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - employers-job-seekers/technical
   - team
   - employers-job-seekers/executive-search
   - employers-job-seekers/pace
-  - employers-job-seekers/technical
   - about
